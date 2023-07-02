@@ -14,7 +14,7 @@ const app = express();
 const cors = require("cors");
 
 const corsOptions = {
-    origin: "http://localhost:3000" // frontend URI (ReactJS)
+    origin: "https://booklistapplication-dv8t.onrender.com" // frontend URI (ReactJS)
 }
 
 app.use(express.json());
