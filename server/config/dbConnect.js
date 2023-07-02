@@ -1,6 +1,6 @@
 const mongoose = require('mongoose');
 
-const databaseUrl ='mongodb+srv://saikrupa1320:fHXYsVqsBpowCqVO@cluster0.irifunz.mongodb.net/book-list-app';
+const databaseUrl =process.env.MONGODB_URL;
 const dbConnect = () => {
     mongoose
       .connect(databaseUrl, {})
